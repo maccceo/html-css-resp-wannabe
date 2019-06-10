@@ -65,3 +65,16 @@ img{
 .clear {
   clear:both;
 }
+
+/* SCHERMO GRANDE */
+@media screen and (min-width: 1024px) {
+  
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    float: left;
+    width: calc(100% / 3);
+    margin-top: 80px;
+  }
+
+}
