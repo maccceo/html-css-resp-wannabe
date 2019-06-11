@@ -98,11 +98,26 @@ img{
 
 /* SCHERMO  INTERMEDIO*/
 @media screen and (max-width: 720px)  {
+  
+  .row {
+    width: 100%;
+  }
+
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right,
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    float: none;
+    width: 100%;
+  }
+
 }
 
-/* SCHERMO TABLET */
-@media screen and (max-width: 1023px) {
-}
+/* SCHERMO TABLET - max-width: 1023px */
+/* versione standard del sito */
+
 
 /* SCHERMO GRANDE */
 @media screen and (min-width: 1024px) {
