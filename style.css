@@ -2,11 +2,12 @@
   width: 992px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 /* BLOCCO LEZIONI */
-#lezioni .row > .left, #lezioni .row > .right{
+#lezioni .row > .left,
+#lezioni .row > .right{
   width: 50%;
   float: left;
 }
@@ -70,6 +71,29 @@ img{
 
 /* SCHERMO SMARTPHONE */
 @media screen and (max-width: 480px) {
+
+  .row {
+    width: 100%;
+    margin-bottom: 300px;
+  }
+
+  /* tolgo margine di separazione grosso all'ultima row in quanto inutile */
+  #why .row {
+     margin-bottom: 20px;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right,
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right,
+  #why .row > .first,
+  #why .row > .second,
+  #why .row > .third {
+    float: none;
+    width: 100%;
+  }
+
 }
 
 /* SCHERMO  INTERMEDIO*/
@@ -82,7 +106,7 @@ img{
 
 /* SCHERMO GRANDE */
 @media screen and (min-width: 1024px) {
-  
+
   #why .row > .first,
   #why .row > .second,
   #why .row > .third {
